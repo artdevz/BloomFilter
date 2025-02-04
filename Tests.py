@@ -19,7 +19,7 @@ def testFalsePositive(m, k, s, e):
     emails = [generateEmail() for i in range(e)]
 
     falsePositive = sum(1 for email in emails if bloom.check(email))
-    print(f"Falsos Positivos: [{falsePositive}]:    m = {m}, k = {k}, Spams: {s}, Emails Válidos: {e}")
+    print(f"{falsePositive}, {m}, {k}, {s}, {e}")
 
 mValues = [10, 250, 500]
 kValues = [3, 6, 9]
